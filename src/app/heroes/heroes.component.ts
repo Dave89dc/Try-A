@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 import { Hero } from '../hero';
 import { HeroService } from '../services/hero.service';
 import { MessageService } from '../services/message.service';
@@ -8,7 +9,7 @@ import { MessageService } from '../services/message.service';
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.scss']
 })
-export class HeroesComponent {
+export class HeroesComponent implements OnInit {
 
   selectedHero?: Hero;
 
